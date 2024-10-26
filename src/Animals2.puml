@@ -1,0 +1,24 @@
+@startuml
+
+class Main {
+    + main(args: String[])
+}
+
+class Animals2 {
+    - alimentacion: String
+    -  piel: String
+    - PE: String
+
+    + Animals2()
+    + getAlimentacion(): String
+    + setAlimentacion(alimentacion: String): void
+    + getPiel(): String
+    + setPiel(piel: String): void
+    + getPE(): String
+    + setPE(PE: String): void
+    + detalleAnimal(): String
+}
+
+Main --> Animals2 : uses
+
+@enduml
